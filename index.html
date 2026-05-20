@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fresh Bliss | Jugos & Postres Fríos</title>
+  <meta name="description" content="Menú digital de jugos naturales, postres fríos, granitas artesanales y combos refrescantes con pedido por WhatsApp." />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://docs.google.com https://docs.googleusercontent.com; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
+  <meta name="theme-color" content="#2f5d50" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav container">
+      <a class="brand" href="#">
+        <span class="brand-icon">🍹</span>
+        <span>Fresh Bliss</span>
+      </a>
+      <a class="nav-cta" href="#menu">Ver menú</a>
+    </nav>
+
+    <section class="hero-content container">
+      <div class="hero-copy">
+        <span class="eyebrow">Jugos naturales & postres fríos</span>
+        <h1>Fresco, natural y listo para disfrutar</h1>
+        <p>Jugos naturales, granitas artesanales, postres fríos y combos para disfrutar en casa, en la oficina o al paso. Armá tu pedido y envialo por WhatsApp.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#menu">Empezar pedido</a>
+          <button class="btn secondary" type="button" id="openCartTop">Ver carrito</button>
+        </div>
+      </div>
+      <aside class="status-card status-card-simple" aria-label="Estado del restaurante">
+        <span id="storeStatus" class="status-pill">Verificando...</span>
+      </aside>
+    </section>
+  </header>
+
+  <main>
+    <section class="controls container" id="menu">
+      <div>
+        <span class="section-kicker">Nuestro menú</span>
+        <h2>Elegí algo fresco</h2>
+      </div>
+      <div class="search-wrap">
+        <input id="searchInput" type="search" placeholder="Buscar jugo, granita, postre, combo..." autocomplete="off" />
+      </div>
+    </section>
+
+    <section class="container category-bar" id="categoryBar" aria-label="Categorías"></section>
+
+    <section class="container promo-strip" id="promoStrip"></section>
+
+    <section class="container products-grid" id="productsGrid" aria-live="polite"></section>
+  </main>
+
+  <button class="floating-cart" id="floatingCart" type="button" aria-label="Abrir carrito">
+    <span class="floating-cart-icon">🛒</span>
+    <span class="floating-cart-content">
+      <strong>Ver pedido</strong>
+      <small><span id="cartCount">0</span> productos · <span id="cartButtonSubtotal">$0</span></small>
+    </span>
+  </button>
+
+  <div class="cart-toast" id="cartToast" role="status" aria-live="polite">Producto agregado al carrito</div>
+
+  <aside class="cart-panel" id="cartPanel" aria-hidden="true">
+    <div class="cart-header">
+      <div>
+        <span class="section-kicker">Tu pedido</span>
+        <h2>Carrito</h2>
+      </div>
+      <button class="icon-btn" id="closeCart" type="button" aria-label="Cerrar carrito">×</button>
+    </div>
+
+    <div id="cartItems" class="cart-items"></div>
+
+    <div class="delivery-box">
+      <label for="deliveryZone">Zona de entrega</label>
+      <select id="deliveryZone">
+        <option value="retiro" data-price="0">Retiro por el local - $0</option>
+        <option value="centro" data-price="900">Centro - $900</option>
+        <option value="cercana" data-price="1400">Zona cercana - $1.400</option>
+        <option value="extendida" data-price="2200">Zona extendida - $2.200</option>
+      </select>
+
+      <label for="customerAddress">Dirección / referencia</label>
+      <input id="customerAddress" type="text" placeholder="Ej: Av. Mitre 123, timbre B" />
+
+      <label for="customerNotes">Notas del pedido</label>
+      <textarea id="customerNotes" rows="3" placeholder="Ej: sin cebolla, pago con transferencia..."></textarea>
+    </div>
+
+    <div class="cart-summary">
+      <div><span>Productos</span><strong id="subtotal">$0</strong></div>
+      <div><span>Delivery</span><strong id="deliveryCost">$0</strong></div>
+      <div class="total"><span>Total</span><strong id="total">$0</strong></div>
+    </div>
+
+    <button class="btn primary full whatsapp-btn" id="sendWhatsApp" type="button">
+      <span>Enviar pedido por WhatsApp</span>
+      <strong id="whatsappTotal">$0</strong>
+    </button>
+  </aside>
+
+  <div class="overlay" id="overlay"></div>
+
+  <footer class="footer container">
+    <section class="footer-info" aria-label="Horarios de atención y ubicación">
+      <article>
+        <span class="section-kicker">Horarios de atención</span>
+        <h3>Lunes a sábado de 9:00 a 21:00 hs</h3>
+        <p>Domingos cerrado. Pedidos para retiro o delivery dentro del horario de atención.</p>
+      </article>
+      <article>
+        <span class="section-kicker">Ubicación</span>
+        <h3>Av. de las Frutas 1280, Local 3</h3>
+        <p>Ciudad Demo, Argentina. Retiro por local, delivery por zona y pedidos para eventos.</p>
+      </article>
+    </section>
+    <p>Demo Fresh Bliss para MS Web · Carta editable desde CSV / Google Sheets · GitHub Pages</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+id,nombre,categoria,descripcion,precio,imagen,destacado,promo,combo,disponible
+1,Jugo Verde Equilibrio,Jugos Naturales,"Manzana verde, pepino, limón, jengibre suave y menta fresca. Liviano y refrescante.",3800,img/jugos.jpg,si,si,no,si
+2,Naranja Exprimida Fresh,Jugos Naturales,"Naranja natural exprimida en el momento, sin conservantes y servida bien fría.",3200,img/jugos.jpg,si,no,no,si
+3,Tropical Mango Mix,Jugos Naturales,"Mango, ananá y naranja. Dulce, frutal y con textura suave.",4100,img/jugos.jpg,no,no,no,si
+4,Limonada Menta & Jengibre,Jugos Naturales,"Limón natural, menta fresca, hielo y un toque de jengibre.",3500,img/jugos.jpg,no,si,no,si
+5,Berry Citrus,Jugos Naturales,"Frutilla, frutos rojos y naranja. Fresco, intenso y ligeramente ácido.",4300,img/jugos.jpg,no,no,no,si
+6,Granita de Frutilla,Granitas,"Granita helada de frutilla natural, ideal para días de calor.",3900,img/granitas.jpg,si,si,no,si
+7,Granita Tropical,Granitas,"Mango, maracuyá y ananá con hielo granizado y sabor intenso.",4200,img/granitas.jpg,si,no,no,si
+8,Granita Limón & Menta,Granitas,"Granita cítrica de limón con menta fresca. Muy refrescante.",3900,img/granitas.jpg,no,no,no,si
+9,Copa Cheesecake Fría,Postres Fríos,"Base crocante, crema suave y salsa de frutos rojos.",4800,img/postres-frios.jpg,si,si,no,si
+10,Mousse de Maracuyá,Postres Fríos,"Mousse liviana con pulpa de maracuyá y crema fría.",4300,img/postres-frios.jpg,no,no,no,si
+11,Chocotorta en Vaso,Postres Fríos,"Clásica chocotorta servida en vaso individual, lista para disfrutar.",4500,img/postres-frios.jpg,si,no,no,si
+12,Ensalada de Frutas Premium,Postres Fríos,"Frutas frescas de estación con jugo natural y presentación individual.",3900,img/postres-frios.jpg,no,no,no,si
+13,Combo Energía Natural,Combos,"Jugo verde equilibrio + ensalada de frutas premium.",6900,img/combos-fresh.jpg,si,si,si,si
+14,Combo Dulce Fresh,Combos,"Tropical mango mix + chocotorta en vaso.",7900,img/combos-fresh.jpg,si,no,si,si
+15,Combo Granita Dúo,Combos,"2 granitas a elección para compartir o pedir en pareja.",7200,img/combos-fresh.jpg,no,si,si,si
+16,Combo Oficina Fresh,Combos,"4 jugos naturales surtidos + 2 postres fríos. Ideal para compartir.",18500,img/combos-fresh.jpg,si,no,si,si
